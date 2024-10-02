@@ -77,6 +77,8 @@ class CinemaViewController: UIViewController, UITableViewDataSource, UITableView
         // Add action to the star button
         cell.FavoriteButton.tag = indexPath.row
         cell.FavoriteButton.addTarget(self, action: #selector(toggleFavorite(_:)), for: .touchUpInside)
+        
+        //Forgetting this line in Final Submission T_T
         cell.CinemaLocation.text = cinema.zone_name_en
         
         return cell
